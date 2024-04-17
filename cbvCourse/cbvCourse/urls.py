@@ -21,6 +21,6 @@ from cbvCourseApp import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("courses/", views.Course_list.as_view()),
+    path("courses/", views.CourseList.as_view()),
     path("courses/<int:pk>", views.CourseDetail.as_view()),
 ]
